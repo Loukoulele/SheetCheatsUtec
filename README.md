@@ -388,6 +388,73 @@ function main() {
 window.onload = main;
 ```
 
+### Création des stockages distincts
+
+Avant HTML5, les données applicatives était stockées dans les cookies inclues dans chaque requête serveur. L'introduction d'HTML5 introduit de ce fait un nouveau type de stockage et celui-ci plus sécurisé. On peut alors stocker une grande quantité d'informations sans impacter les performances du site web. Par rapport aux cookies la limite de stockage est bien plus conséquente (au moins 5mb) et les données ne sont jamais envoyées vers un serveur. Ces stockages web sont délimité par origine (nom de domaine), ce qui veut dire que toute page venant de la même origine qu'une autre aura accès à la donnée.
+
+```javascript
+// Store
+localStorage.setItem("lastname", "Smith");
+
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+//clear
+localStorage.removeItem("lastname");
+```
+
+Il existe deux types de stockage :
+
+* localStorage : C'est un stockage qui est permanent il sera uniquement supprimé lors de la desinstallation du navigateur ou de l'effacement forcé des cookies.
+* sessionStorage : Il est similaire au localStorage à l'exception qu'il garde la donnée que pour une session. Donc les données sont effacés lorsque l'utilisateur ferme l'onglet specifc à la session.
+
+Ces stockages sont de type clé/valeur, ce qui se rapproche fortement du comportement du language JSON avec des fonctions spécifique à la manipulation de la données.  
+
+### Les déconnexions inattendues
+
+HTML5 propose aux utilisateurs pocesseur de faible connexion la possibilité de consulter un site web même en étant hors ligne. Cela joue avec un système de cache mis en place par le navigateur.
+
+```YAML
+# html5.appcache
+CACHE MANIFEST
+# Version 1
+CACHE:
+# index.html est caché par défaut (contient le lien vers le MANIFEST)
+index.html
+style.css
+img/html5.png
+NETWORK:
+FALLBACK:
+```
+
+```HTML
+<!-- index.html -->
+<!DOCTYPE html>
+<html manifest="html5.appcache">
+...
+</html>
+```
+
+### Geolocalisation
+
+L'introduction de la geolocalisation dans le navigateur a permis un avancé majeur dans le traitement et la mise a disposition d'information selon la localisation. Ce traitement est géré par l'API geolocalisation HTML5 en javascript.
+
+```javascript
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    pos  = "Latitude : " + position.coords.latitude  + "<br/>";
+    pos += "Longitude: " + position.coords.longitude + "<br/>";
+    pos += "Altitude : " + position.coords.altitude  + "<br/>";
+    document.getElementById("myPosition").innerHTML = pos;
+  },
+  function(position) {
+    document.getElementById("myPosition").innerHTML = "Impossible de vous localiser" ;
+  });
+} else {
+  document.getElementById("myPosition").innerHTML = "Service non disponible" ;
+}
+```
+
 ## Syntaxe de projet
 
 ### Structure des balises head et body
