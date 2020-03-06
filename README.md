@@ -85,7 +85,7 @@ Une page web respectant les standards réduira son risque d’incompatibilité e
 
 # Exemple de nouvel balise dans HTML5 :
 
-* **<video>** : Celui-ci ressemble à la balise <img>, on déclace plusieurs chemin d'une vidéo au cas ou si le navigateur ne prend pas en compte l'extension.
+* **video** : Celui-ci ressemble à la balise img, on déclace plusieurs chemin d'une vidéo au cas ou si le navigateur ne prend pas en compte l'extension.
 
 ```HTML
 <!DOCTYPE html>
@@ -109,7 +109,7 @@ Une page web respectant les standards réduira son risque d’incompatibilité e
 </html>
 ```
 
-* **<meter>** : L'élément <meter> représente une valeur scalaire dans un intervalle donné ou une valeur fractionnaire.
+* **meter** : L'élément meter représente une valeur scalaire dans un intervalle donné ou une valeur fractionnaire.
 
 ```HTML
 <!DOCTYPE html>
@@ -134,7 +134,7 @@ Une page web respectant les standards réduira son risque d’incompatibilité e
 </html>
 ```
 
-* **<progress>** : L'élément HTML <progress> indique l'état de complétion d'une tâche et est généralement représenté par une barre de progression.
+* **progress** : L'élément HTML progress indique l'état de complétion d'une tâche et est généralement représenté par une barre de progression.
 
 ```HTML
 <!DOCTYPE html>
@@ -154,7 +154,7 @@ Une page web respectant les standards réduira son risque d’incompatibilité e
 </html>
 ```
 
-* **<output>** : Le formulaire qui suit fournit un curseur dont la valeur peut aller de 0 à 100 ainsi qu'un élément <input> dans lequel on peut saisir un deuxième nombre. Les deux nombres sont additionnés et le résultat est affiché dans l'élément <output> et est actualisé lorsqu'une des deux valeurs est modifiée.
+* **output** : Le formulaire qui suit fournit un curseur dont la valeur peut aller de 0 à 100 ainsi qu'un élément <input> dans lequel on peut saisir un deuxième nombre. Les deux nombres sont additionnés et le résultat est affiché dans l'élément output et est actualisé lorsqu'une des deux valeurs est modifiée.
 
 ```HTML
 <!DOCTYPE html>
