@@ -329,6 +329,65 @@ Des librairies Javascript permettent notamment de faciliter l'utilisation de ces
 * Popcorn.js
 * Html5Media
 
+<**canvas**> | Balise permettant de dessiner, traiter des images et pouvant même créer un jeu complet.
+
+C'est une forte alternative pour eviter l'integration de script flash ou encore java pour réaliser des taches que ces deux languages permettaient de faire plus simplement.
+
+```HTML
+<canvas id="myCanvas" width="600" height="600">
+  Votre navigateur ne supporte pas le canvas !
+</canvas>
+```
+
+#### 2D
+
+Pour dessiner avec un canvas on va utiliser la liaison avec l'API de dessin 2D via Javascript :
+
+```HTML
+<script>
+  var draw = document.getElementById('myCanvas');
+  var shape = draw.getContext('2d');
+  shape.fillStyle = "blue";
+  shape.fillRect(200, 200, 500, 500);
+</script>
+```
+
+Les formes primitives du canvas se limitent d'une part à des fonctions de la famille des rectangles :
+
+* **fillRect(x, y, l, h)** | un rectangle plein
+* **strokerect(x, y, l, h)** | le contour d'un rectangle
+* **clearRect(x, y, l, h)** | Rectangle vide
+
+D'autre part le canvas permet une liberté de traçage d'un chemin pour créer ses propres formes.
+
+* **beginPath()** | permet de commencer le traçage.
+* **moveTo(x, y)** | permet de se deplacer dans l'espace sans dessiner.
+* **lineTo(x, y)** | permet de tracer une ligne de l'emplacement jusqu'au point indiqué.
+* **closePath()** | permet de finir le traçage.
+
+Bien d'autre fonctions sont disponible pour laisser libre cours à l'imagination.
+
+#### 3D
+
+Le passage vers la balise canvas à permit d'introduire le support de webGL. weebGL est un API javascript conçue la création en 3D. webGL est aujourd'hui supporter par la plupart des navigateurs
+
+```JavaScript
+function main() {
+  const canvas = document.querySelector("#myCanvas");
+  const gl = canvas.getContext("webgl");
+
+  if (gl === null) {
+    alert("Unable to initialize WebGL. Your browser or machine may not support it.");
+    return;
+  }
+
+  gl.clearColor(0.0, 0.0, 0.0, 1.0);
+  gl.clear(gl.COLOR_BUFFER_BIT);
+}
+
+window.onload = main;
+```
+
 ## Syntaxe de projet
 
 ### Structure des balises head et body
