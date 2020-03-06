@@ -398,3 +398,18 @@ Exemple : Twig, Mustache, Handlebars, doT, pug etc ...
 ```
 
 Nous pouvons voir la simplicité et une grosse réduction de code coté front. Cela permet aussi d'alléger et d'augmenter la sécurité de l'application web.
+
+# API HTML5
+
+Comme nous l'avons vu précédement, HTML5 ce veux plus optimisé pour les applications web, c'est pour cela qu'il permet d'utiliser 8 nouvelles API qui permettront de créer de nouvelles applications et qui peuvent être utilisées ensemble avec de nouveaux éléments introduits pour les applications dont :
+
+* Une API de dessin 2D utilisé avec la nouvelle balise canvas.
+* Une API pour jouer des vidéos et des sons/musiques utilisé avec les nouvelles balises video et audio.
+* Une API utilisée pour les applications hors-lignes.
+* Une API d'édition en combinaison avec le nouvel attribut contenteditable.
+* Une API de drag and drop en combinaison avec l'attribut draggable.
+* Une API qui permet l'accès à l'historique et permet aux pages d'en ajouter pour prévenir les problèmes de bouton retour-en-arrière.
+
+# Connexion et distribution P2P
+
+HTML 5 se voit doté de la capacité de réaliser des connexions entre utilisateurs PeerToPeerConnection(), et également grâce aux websocket. Grâce à la création de nouvelles balises, on voit que l'on va pouvoir améliorer le référencement de son site grâce notamment à aside, nav, header et footer...
