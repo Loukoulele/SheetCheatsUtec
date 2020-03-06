@@ -44,7 +44,7 @@ Aujourd'hui W3C reconnait W3C comme une norme en langage d'affichage orienté we
 
 HTML5 n'est pas qu'une simple mis à jour suivant HTML4, c'est un langage complet qui a pour but de simplifier les développeurs à utiliser un maximum d'outil utile sur les sites web. HTML4 se contenté au bon affichage sur la page web, alors qu'aujourd'hui il se focalise essentiellement sur les applications WEB et ces intéractivité.
 
-## HTML5 Cheatsheet
+## HTML5 Guidelines
 
 HTML5 est la dernière version du standard HTML. Cette nouvelle version contient de nouveaux éléments, attributs, comportements et un large panel de technologie qui permettent de construire des sites et applications performants et divers.
 
@@ -87,7 +87,7 @@ L’arrivé des navigateurs modernes à tous bouleversé. Ils ne portent que peu
 
 # Pourquoi faut-il respecter les normes du W3C ?
 
-Bien que le strict respect des normes W3C n’est pas d’effet particulier sur le référencement, il parait préférable de les suivre au maximum. Néanmoins, certaines erreurs peuvent nuire grandement à l’indexation de votre site. Par exemple, ne pas mettre de balise <title> entre les balises <head> ne gênera pas vos visiteurs mais affectera votre positionnement sur Google.
+Bien que le strict respect des normes W3C n’est pas d’effet particulier sur le référencement, il parait préférable de les suivre au maximum. Néanmoins, certaines erreurs peuvent nuire grandement à l’indexation de votre site. Par exemple, ne pas mettre de balise \<title> entre les balises \<head> ne gênera pas vos visiteurs mais affectera votre positionnement sur Google.
 
 Les normes ont été créer pour éviter que tout le monde se disperse et chacun y gagne en compatibilité.
 
@@ -174,7 +174,7 @@ Une page web respectant les standards réduira son risque d’incompatibilité e
 </html>
 ```
 
-* **output** : Le formulaire qui suit fournit un curseur dont la valeur peut aller de 0 à 100 ainsi qu'un élément <input> dans lequel on peut saisir un deuxième nombre. Les deux nombres sont additionnés et le résultat est affiché dans l'élément output et est actualisé lorsqu'une des deux valeurs est modifiée.
+* **output** : Le formulaire qui suit fournit un curseur dont la valeur peut aller de 0 à 100 ainsi qu'un élément \<input> dans lequel on peut saisir un deuxième nombre. Les deux nombres sont additionnés et le résultat est affiché dans l'élément output et est actualisé lorsqu'une des deux valeurs est modifiée.
 
 ```HTML
 <!DOCTYPE html>
@@ -417,6 +417,14 @@ Exemple : Twig, Mustache, Handlebars, doT, pug etc ...
 </body>
 ```
 
+### Liste exhaustive de moteur :
+
+| Nom                                                 | Language   |
+| ---                                                 | ---        |
+| [Pugjs](https://pugjs.org/api/getting-started.html) | Javascript |
+| [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) | Python   |
+| [EJS](https://ejs.co/)                              | Javascript |
+
 Nous pouvons voir la simplicité et une grosse réduction de code coté front. Cela permet aussi d'alléger et d'augmenter la sécurité de l'application web.
 
 # API HTML5
@@ -494,9 +502,41 @@ On peut apercevoir que HTML veux simplifié l'utilisation de balise sans forceme
 
 Nous pouvons voir de nouvelles améliorations liés à cette mise-à-jour. Ce n'est effectivement pas une update majeur mais elle a son lot de spécifité qui permet d'améliorer nettement la qualité de développement pour les développeur.
 
+## HTML5 les fonctionnalités retirées
+
+HTML5 continue de s'améliorer que ce soit dans le sens d'ajout de nouvelles fonctionnalités comme des balises, des créations de nouvelles APIs etc..., mais aussi dans le sens de revoir ce qui est existant et de définir si l'utilité persiste ou non.
+
+Voila une liste exhaustive des fonctionnalités supprimés dans cette version 5 de HTML :
+
+Les éléments ci-dessous ne sont plus valides dans HTML5 car la fonctionnalité apportée par ceux-ci sont aujourd'hui mieux géré par le moteur de style `CSS`.
+
+* <**basefont**> : permet de définir les paramètres de la font basique utilisée.
+* <**big**> : permet de rendre le texte plus grand.
+* <**center**> : permet de centrer le texte.
+* <**font**> : permet de surcharger la font utilisée par le texte.
+* <**strike**> : permet de barré le texte.
+* <**tt**> : permet de donner un style particulier au texte.
+
+Les éléments ci-dessous ne sont plus acceptés par HTML5 car ils causent des problèmes d'utilisation et d'accessibilité.
+
+* <**frame**> : permet de définir un affichage de fenêtre avec un fichier appelé.
+* <**frameset**> : permet de définir une liste de frame.
+* <**noframes**> : permet d'avertir l'utilisateur que son navigateur ne supporte pas les frames.
+
+Les éléments ci-dessous ont été supprimé à cause de leur sous utilisation.
+
+* <**acronym**> : permet de donner plus d'informations sur un acronyme. Il est remplacé par le tag <**abbr**>
+* <**applet**> : permet d'importer des script java dans une page web. Il est remplacé par <**embed**> ou <**object**>
+* <**isindex**> : permet de faire une requête sur les pages d'un site web et lister les pages qui corréspondent.
+* <**dir**> : permet de créer une liste non ordonée. Il est remplacé" par le tag <**ul**>
+
+Les différent tags sont encore accessible mais ne seront, pour la plupart, pas supporté par le navigateur.
+
 <hr>
-## Source (pour nous) :
+
+## Source (pour nous) :  
 Detail + history :
+
 * https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1921707-quest-ce-que-le-html5
 * https://fr.wikipedia.org/wiki/Hypertext_Markup_Language
 * https://www.w3schools.com/html/html5_intro.asp
