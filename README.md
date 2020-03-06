@@ -15,7 +15,7 @@ Date de rendu : 16/03/2020
 
 Mémoire réalisé par Ilan B., Maxime C., Jordan L.
 
-## Introduction HTML5
+## Introduction HTML
 
 Le "HyperText Markup Language" est un langage de balisage conçu pour représenter des pages webs qui est apparu en 1989. Il a été conç principalement pour rediriger vers des liens externes, aujourd'hui ce langage est utilisé pour
 réalisé des site internet. En 1997 la mis à jour vers html4 à vue le jour, et nous sommes actuellement sur HTML5 depuis son apparition en 2008.
@@ -72,6 +72,16 @@ Bien que le strict respect des normes W3C n’est pas d’effet particulier sur 
 Les normes ont été créer pour éviter que tout le monde se disperse et chacun y gagne en compatibilité.
 
 Une page web respectant les standards réduira son risque d’incompatibilité entre les différents navigateur et la plateforme sur laquelle il tourne (téléphone mobile, grand écran, tablette ….).
+
+### Structure d'un document en HTML 5
+
+```HTML
+<!DOCTYPE html>
+<html>
+ <head></head>
+ <body>Corps de la page</body>
+</html>
+```
 
 # Exemple de nouvel balise dans HTML5 :
 
@@ -340,7 +350,7 @@ Evitez de lister des mots-clés en guise de description de page, vous serez alor
 Il existe différent type de moteur de template qui permet de compilé des modéeles en php par exemple pour optimisé simplement la page web et évite la surcharge.
 Exemple : Twig, Mustache, Handlebars, doT, pug etc ...
 
-HTML/PHP classique :
+### HTML/PHP classique :
 
 ```HTML
 <body>
@@ -367,7 +377,7 @@ HTML/PHP classique :
 </body>
 ```
 
-Moteur de template (Twig) :
+### Moteur de template (Twig) :
 
 ```HTML
 <body>
