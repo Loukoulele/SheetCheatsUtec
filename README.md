@@ -322,6 +322,13 @@ Attention le support de la vidéo peut varié en fonction des formats (mkv, webm
 </audio>
 ```
 
+De même que pour la balise video, la compatibilité avec le navigateur sera en fonction du format de l'audio (mp3, ogg, flac...).
+
+Des librairies Javascript permettent notamment de faciliter l'utilisation de ces balises et d'en compléter le fonctionnement :
+
+* Popcorn.js
+* Html5Media
+
 ## Syntaxe de projet
 
 ### Structure des balises head et body
@@ -349,12 +356,20 @@ Les balises se ferment avec la syntaxe html5 c'est à dire sans le slash ("/") d
 <meta charset="utf-8">
 ```
 
+ou
+
+```HTML
+<img src="https://image.com/myimage" />
+```
+
 ### HTML attribut lang
 
 Ne pas oublier l'attribut lang à placer sur la balise HTML :
 ```HTML
 <html lang="fr">
 ```
+
+Il aide entre autre au référencement par exemple des robots Google qui permettent d'indexer le contenu en fonction de la langue de la géololisation.
 
 ### Balise Title
 
