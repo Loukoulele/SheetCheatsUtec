@@ -20,6 +20,26 @@ Mémoire réalisé par Ilan B., Maxime C., Jordan L.
 Le "HyperText Markup Language" est un langage de balisage conçu pour représenter des pages webs qui est apparu en 1989. Il a été conç principalement pour rediriger vers des liens externes, aujourd'hui ce langage est utilisé pour
 réalisé des site internet. En 1997 la mis à jour vers html4 à vue le jour, et nous sommes actuellement sur HTML5 depuis son apparition en 2008.
 
+## HTML History
+
+* 1989	Tim Berners-Lee invented www
+* 1991	Tim Berners-Lee invented HTML
+* 1993	Dave Raggett drafted HTML+
+* 1995	HTML Working Group defined HTML 2.0
+* 1997	W3C Recommendation: HTML 3.2
+* 1999	W3C Recommendation: HTML 4.01
+* 2000	W3C Recommendation: XHTML 1.0
+* 2008	WHATWG HTML5 First Public Draft
+* 2012	WHATWG HTML5 Living Standard
+* 2014	W3C Recommendation: HTML5
+* 2016	W3C Candidate Recommendation: HTML 5.1
+* 2017	W3C Recommendation: HTML5.1 2nd Edition
+* 2017	W3C Recommendation: HTML5.2
+
+Pour commencer nous allons voir les différentes balises et évolution de ce langage et en fin de parti nous parlerons des nouvelles updates de HTML 5.1 et HTML 5.2.
+
+Aujourd'hui W3C reconnait W3C comme une norme en langage d'affichage orienté web.
+
 ## Qu'est ce que HTML5 ?
 
 HTML5 n'est pas qu'une simple mis à jour suivant HTML4, c'est un langage complet qui a pour but de simplifier les développeurs à utiliser un maximum d'outil utile sur les sites web. HTML4 se contenté au bon affichage sur la page web, alors qu'aujourd'hui il se focalise essentiellement sur les applications WEB et ces intéractivité.
@@ -413,3 +433,87 @@ Comme nous l'avons vu précédement, HTML5 ce veux plus optimisé pour les appli
 # Connexion et distribution P2P
 
 HTML 5 se voit doté de la capacité de réaliser des connexions entre utilisateurs PeerToPeerConnection(), et également grâce aux websocket. Grâce à la création de nouvelles balises, on voit que l'on va pouvoir améliorer le référencement de son site grâce notamment à aside, nav, header et footer...
+
+## HTML5.1 2e édition
+
+Elle a commencé a être développer en décembre 2012 et a était validé en novembre 2016.
+
+* **Picture et srcset** : Pour commencer l'ajout du picture et srcset. Cela permet d'optimiser la bande passante du serveur car il permet de charger les images en fonction d'une taille d'écran (responsivité)
+
+```HTML
+<picture>
+  <source media="(max-width: 480px)"
+            srcset="http://monurl.fr/small.jpg">
+  <source media="(max-width: 640px)"
+            srcset="http://monurl.fr/medium.jpg">
+  <source media="(max-width: 1024px)"
+            srcset="http://monurl.fr/large.jpg">
+  <img src="http://monurl.fr/large.jpg" alt="Faon">
+</picture>
+```
+
+Celle ci est relativement similaire à la méthode de la balise vidéo qui permet de gérer les différentes extensions en fonction du navigateur, néanmoins ici il permet de gérer les tailles d'écrans et si aucune n'est compatible alors retourner une image par défaut.
+
+* **Details et summary** : Ceci permet de ne plus utilisé de javascript pour déplier un contenu (collapse en bootstrap).
+
+```HTML
+<details>
+  Ceci est un texte.
+</details>
+<details open>
+  <summary>
+    Introduction
+  </summary>
+  Angular 2 est un framework JavaScript développé par Google. Son code a été complètement revu par rapport à Angular 1, blablabla...
+</details>
+```
+On peut apercevoir que HTML veux simplifié l'utilisation de balise sans forcement appliqué du css ou du js pour utilisé quelque chose de courant dans le web.
+
+* **Menu contextuel** : Ceci permet d'ajouter des fonctionalités au menu de votre navigateur. Il est possible d'associer un élement de votre page à un menu personnalisé.
+
+```HTML
+<p contextmenu="custom-menu">
+  Faites un clic droit sur ce paragraphe pour ouvrir le menu personnalisé, Firefox only :(
+</p>
+
+<menu type="context" id="custom-menu">
+  <menuitem type="checkbox" checked="true">Je suis une checkbox</menuitem>
+  <menuitem type="command" icon="https://www.grafikart.fr/images/logo.png" onclick="window.open('https://www.grafikart.fr/q/php+tutoriel', 'shareWindow');">Rechercher sur le site</menuitem>
+</menu>
+```
+
+* **Nouveaux types : week, month, datetime-local** : De nouveau type d'input pour les dates, semaines, mois ou un systeme de calendrier.
+
+```HTML
+<input type="week"> permet de sélectionner une semaine spécifique sous forme de : semaine / année.
+<input type="month"> permet de sélectionner un mois spécifique sous forme de : mois / année.
+<input type="datetime-local"> permet de sélectionner une date spécifique sous forme de : jour / mois / année / heure / minute.
+```
+
+* **Amélioration des API HTML5** : il y a d'autres changements comme l'amélioration de l'API requestAnimationFrame pour faire des animations plus efficaces, la suppression de l'attribue multiple pour les inputs de type range, l'ajout de la méthode reportValidity() qui retourne immédiatement à l'affichage d'une page si un formulaire est valide ou non, etc.
+
+Nous pouvons voir de nouvelles améliorations liés à cette mise-à-jour. Ce n'est effectivement pas une update majeur mais elle a son lot de spécifité qui permet d'améliorer nettement la qualité de développement pour les développeur.
+
+<hr>
+## Source (pour nous) :
+Detail + history :
+* https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1921707-quest-ce-que-le-html5
+* https://fr.wikipedia.org/wiki/Hypertext_Markup_Language
+* https://www.w3schools.com/html/html5_intro.asp
+Doctype :
+* http://41mag.fr/un-doctype-simplifie-en-html-5.html
+Nouvel balise HTML5 :
+* https://developer.mozilla.org/fr/docs/Web/HTML/Element/video
+* https://developer.mozilla.org/fr/docs/Web/HTML/Element/output
+* https://jaetheme.com/balises-html5/
+* https://www.aurone.com/les-nouveaut%C3%A9s-apport%C3%A9es-par-html-5
+Template engine :
+* https://twig.symfony.com/
+* https://learn.userfrosting.com/templating-with-twig/overview
+API HTML 5 :
+* https://www.programmation-facile.com/api-javascript-html5-utiliser-sites-web/
+HTML 5.1 :
+* https://www.w3.org/TR/html51/
+* https://www.grafikart.fr/blog/w3C-html-5-1
+HTML 5.2 :
+* https://www.w3.org/TR/html52/
