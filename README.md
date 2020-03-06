@@ -345,7 +345,7 @@ Evitez de lister des mots-clés en guise de description de page, vous serez alor
 <meta name="description" content="description de la page">
 ```
 
-### Qu'est ce qu'un moteur de template moderne ?
+# Qu'est ce qu'un moteur de template moderne ?
 
 Il existe différent type de moteur de template qui permet de compilé des modéeles en php par exemple pour optimisé simplement la page web et évite la surcharge.
 Exemple : Twig, Mustache, Handlebars, doT, pug etc ...
