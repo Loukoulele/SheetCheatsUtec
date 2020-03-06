@@ -1,6 +1,6 @@
 ![Badge Language](https://img.shields.io/badge/Language-HTML-blue) ![Badge Status](https://img.shields.io/badge/Status-En%20Cours-yellow)
 <p align="center" style="text-align: center;">
-<img src="./HTML5_Logo.svg" alt="HTML5 Logo" height="256" />
+<img src="./HTML5_Logo.svg" alt="HTML5 Logo" height="256" /><br>
 <img src="https://media0.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif?cid=790b761110d5daad17023df280fa42ccd69c563856ad53b0&rid=giphy.gif" alt="this slowpoke moves"  width="250" />
 </p>
 <h1 class="text-blue" style="color: #ea8853; font-weight: 400">Cheatsheet HTML5</h1>
