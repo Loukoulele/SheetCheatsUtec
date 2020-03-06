@@ -54,7 +54,7 @@ HTML5 est la dernière version du standard HTML. Cette nouvelle version contient
 * **Multimédia** : fournit une nouvelle façon de gérer les objets multimédias.
 * **Graphiques 2D/3D et effets** : propose de nouvelles façons de présenter.
 * **Performance et integration** : fournit une grande vitesse d'optimisation et une meilleure utilisation du matériel.
-* **Accès aux appareils** : permets l'utilisation d'une variété d'appareils.
+* **Accès aux appareils** : permets l'utilisation d'une variété d'appareils et support récent de la géolocalisation.
 * **Habillé** : permets de créer des styles attirants et petillants.
 
 ## Modèle basique
@@ -92,6 +92,10 @@ Bien que le strict respect des normes W3C n’est pas d’effet particulier sur 
 Les normes ont été créer pour éviter que tout le monde se disperse et chacun y gagne en compatibilité.
 
 Une page web respectant les standards réduira son risque d’incompatibilité entre les différents navigateur et la plateforme sur laquelle il tourne (téléphone mobile, grand écran, tablette ….).
+
+# Se tenir à jour sur le support des navigateurs
+
+Les navigateurs sont sujets à une évolution constante de leurs composants, ce qui rend difficile de se renseigner sur le support des fonctionnalités HTML5 de notre navigateur. Certains sites permettent de suivre ces informations comme [caniuse](https://caniuse.com/) ou [w3school](https://www.w3schools.com/tags/default.asp)
 
 ### Structure d'un document en HTML 5
 
@@ -200,7 +204,7 @@ Une page web respectant les standards réduira son risque d’incompatibilité e
 
 ### Lien CSS
 
-Pour plus de performance on va importer les feuilles dans le head. Cela permet de mettre du 'design' sur la page web, le css permettra d'appliquer des couleurs, de la mise en forme etc ...
+On ne peut parler de HTML5 sans évoquer CSS3 qui vont de paire. Pour plus de performance on va importer les feuilles dans le head. Cela permet de mettre du 'design' sur la page web, le css permettra d'appliquer des couleurs, de la mise en forme etc ...
 
 On peut lier du css avec la balise style (peu recommandable) :
 ```HTML
@@ -232,6 +236,13 @@ On peut lier des fichiers css par lien CDN :
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 ```
+
+Voici quelques nouveautés qu'apporte CSS3 :
+
+* Border-radius : permet d'ajouter une courbe à la bordure d'une balise.
+* Box-shadow : permet d'ajouter une ombre sur certaines balises.
+* Text-shadow : permet d'ajouter une ombre à du texte.
+* Gradients : permet de créer des dégradés de couleurs de façon lineaire ou radiale.
 
 ### Lien Javascript
 
@@ -293,7 +304,7 @@ On peut lier des fichers js par lien CDN :
 <progress value="25" max="100">25%</progress>
 ```
 
-<**source**> <**video**> <**audio**> | Balise pouvant servir à afficher des vidéos ou de l'audio sur la page) :
+<**source**> <**video**> <**audio**> | Balise pouvant servir à afficher des vidéos ou de l'audio sur la page :
 ```HTML
 <video controls width="250" height="200" muted>
   <source src="/media/examples/flower.webm" type="video/webm">
@@ -301,6 +312,9 @@ On peut lier des fichers js par lien CDN :
   This browser does not support the HTML5 video element.
 </video>
 ```
+
+La nouvelle balise vidéo permet aussi de gérer le controleur et le comportement de la vidéo (Si la vidéo doit se lancer automatiquement lorsque la page est chargé)
+Attention le support de la vidéo peut varié en fonction des formats (mkv, webm, mp4....) et du navigateur (chrome, firefox, opera...)
 
 ```HTML
 <audio controls src="/media/examples/t-rex-roar.mp3">
