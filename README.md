@@ -702,12 +702,12 @@ HTML5 est également utilisé dans des domaines tels que l’univers du jeu vid�
 Le but est de ne pas laisser l’utilisateur visiter passivement le site web, grâce aux technologies comme Three.js, WebGL, Javascript, HTML5 intègre des composants modernes, 3D, des ressources permettant de rendre le site plus dynamique, intéractif également.
 Nous pouvons citer le site : fiscalkombat.fr qui sur un site web permet de jouer à un jeu vidéo
 
-![img]("Assets/example1.png")
+![img](Assets/example1.png)
 
 En ce qui concerne le domaine vidéo nous pouvons citer le site : video.bobdylan.com
 Le site en lui-même est une vidéo, nous pouvons voir que l’HTML5 permet de transformer un simple curseur en une télécommande interactive et d’immerger l’utilisateur sur le site internet.
 
-![img]("Assets/bobdylan.png")
+![img](Assets/bobdylan.png)
 
 HTML permet de donner un côté immersif, interactif aux sites web. Les site web deviennent de réels acteurs du digital et permettent de véhiculer des messages, des histoires, des ambiances.
 
@@ -816,7 +816,7 @@ Les éléments ci-dessous ont été supprimé à cause de leur sous utilisation.
 
 Les différent tags sont encore accessible mais ne seront, pour la plupart, pas supporté par le navigateur.
 
-![img]("Assets/htmlchecker.png")
+![img](Assets/htmlchecker.png)
 
 # Utilité aujourd’hui d’utiliser HTML5
 
@@ -833,7 +833,7 @@ Comme dit précédemment, HTML5 de par son succès, devient un réel standard du
 
 Nous pouvons voir au début de cette image < !doctype html> qui est simplifié au maximum, HTML5 est donc dans la simplicité.
 
-![img]("Assets/html.png")
+![img](Assets/html.png)
 
 <hr>
 
