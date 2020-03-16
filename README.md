@@ -861,12 +861,12 @@ HTML 5.1 :
 HTML 5.2 :
 * https://www.w3.org/TR/html52/
 
-https://www.millenium.org/news/156787.html
-https://blog.equancy.com/le-futur-de-la-publicite-en-ligne-cest-html5-et-cest-maintenant/
-https://www.w3.org/TR/html53/
-https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA
-https://www.justegeek.fr/les-navigateurs-internet-et-le-html5/
-http://prof.bpesquet.fr/cours/html5-en-bref/
-https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.switech.fr%2F
-https://www.agenceici.com/le-blog/article/les-sites-web-se-doivent-de-respecter-la-norme-w3c-73
-https://verekia.com/html5/introduction-html5/#part4-3
+* https://www.millenium.org/news/156787.html
+* https://blog.equancy.com/le-futur-de-la-publicite-en-ligne-cest-html5-et-cest-maintenant/
+* https://www.w3.org/TR/html53/
+* https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA
+* https://www.justegeek.fr/les-navigateurs-internet-et-le-html5/
+* http://prof.bpesquet.fr/cours/html5-en-bref/
+* https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.switech.fr%2F
+* https://www.agenceici.com/le-blog/article/les-sites-web-se-doivent-de-respecter-la-norme-w3c-73
+* https://verekia.com/html5/introduction-html5/#part4-3
