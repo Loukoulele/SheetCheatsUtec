@@ -666,9 +666,9 @@ Sa consultation est libre sur le site : ww.w3.org/TR/html53/
 En termes d’extensibilité, avec HTML 5.3 les auteurs peuvent :
 * Créer des éléments personnalisés afin de créer de nouveaux comportements
 * Utiliser l’attribut « class » pour annoter des éléments. Il s’agit d’une des fonctionnalités primaires du CSS
-* Utiliser <meta name=““ content=““> pour inclure des métadonnées à l’échelle de la page
+* Utiliser <**meta name=““ content=““**> pour inclure des métadonnées à l’échelle de la page
 * Annoter des liens avec des significations spécifiques avec rel=““
-* Manipuler des scripts en ligne ou côté serveur à l’aide de <script type=““>
+* Manipuler des scripts en ligne ou côté serveur à l’aide de <**script type=““**>
 * Étendre les API grâce au mécanisme de prototypage de JavaScript
 
 Il sera également possible de capitaliser automatiquement avec l’autocappitalize attribute. Cette fonctionnalité permettra de :
@@ -686,14 +686,14 @@ Une grande partie des fonctionnalités de présentation des versions précédent
 * Coût de maintenance élevé, il est plus simple de maintenir un site intégrant des balises sémantiques appropriées.
 * Taille des documents, l’usage de balise de présentation peut être redondant et ainsi augmenter la taille des documents.
 
-C’est pourquoi le balisage de présentation est supprimé dans la version 5.3. HTML 4.0 avait abandonné le balisage de présentation il y a quelques années. Cependant il reste encore 2 fonctionnalités de balisage de présentation style attribute et <style> element
+C’est pourquoi le balisage de présentation est supprimé dans la version 5.3. HTML 4.0 avait abandonné le balisage de présentation il y a quelques années. Cependant il reste encore 2 fonctionnalités de balisage de présentation style attribute et <**style**> element
 Nous pouvons remarquer que dans cette nouvelle version 5.3, certains éléments de balisage de présentation ont été redéfinies :
-* <b>
-* <i> exemple : <i> deviendra en balise sémantique <em> qui indiquera une mise en valeur
-* <hr>
-* <s>
-* <small>
-* <u>
+* <**b**>
+* <**i**> exemple : <**i**> deviendra en balise sémantique <**em**> qui indiquera une mise en valeur
+* <**hr**>
+* <**s**>
+* <**small**>
+* <**u**>
 
 
 ### HTML5, interactif et innovant
