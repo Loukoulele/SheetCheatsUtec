@@ -657,7 +657,7 @@ On peut apercevoir que HTML veux simplifié l'utilisation de balise sans forceme
 
 Nous pouvons voir de nouvelles améliorations liés à cette mise-à-jour. Ce n'est effectivement pas une update majeur mais elle a son lot de spécifité qui permet d'améliorer nettement la qualité de développement pour les développeur.
 
-### HTML 5.3
+## HTML 5.3
 La technologie HTML5 en est à sa version 5.2, le W3C travaille actuellement sur une version 5.3 qui apportera de nouvelles fonctionnalités permettant d’aider les auteurs d’applications Web. Il a rendu publique le travail concernant la version 5.3.
 Sa consultation est libre sur le site : ww.w3.org/TR/html53/
 
