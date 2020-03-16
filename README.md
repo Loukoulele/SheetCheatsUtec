@@ -1,6 +1,6 @@
 ![Badge Language](https://img.shields.io/badge/Language-HTML-blue) ![Badge Status](https://img.shields.io/badge/Status-En%20Cours-yellow)
 <p align="center" style="text-align: center;">
-<img src="./HTML5_Logo.svg" alt="HTML5 Logo" height="256" />
+<img src="./HTML5_Logo.svg" alt="HTML5 Logo" height="256" /><br>
 </p>
 <h1 class="text-blue" style="color: #ea8853; font-weight: 400">Cheatsheet HTML5</h1>
 <hr>
