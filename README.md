@@ -719,7 +719,7 @@ Actuellement, HTML5 est utilisé par les navigateurs les plus courants (Google C
 Voici un tableau récapitulatif des navigateurs supportant plus ou moins bien HTML5.
 
 | Navigateur                                                 | Version   | Efficacité |
-| ---                                                 | ---        |
+| ---                                                 | ---        |  --- |
 | Google Chrome | 80.0 | Excellente |
 | Opéra | 66.0   | Excellente |
 | Mozilla Firefox                              | 73.0 | Bonne |
