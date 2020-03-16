@@ -678,14 +678,36 @@ Il sera également possible de capitaliser automatiquement avec l’autocappital
 
 Une autre mesure, les auteurs doivent déterminer si la ou les nouvelles fonctionnalités seront accessibles à des utilisateurs atteints d’handicap et si ces fonctionnalités peuvent dégrader la confidentialité et la sécurité des utilisateurs. Il est également important de prendre en compte l’internationalisation des utilisateurs. Il est impératif de prendre en compte ces considérations pour de meilleures pratiques de l’HTML.
 
+## Balisage de présentation
+
+La version 5.3 axe ses modifications sur l’HTML sémantique. C’est-à-dire l’utilisation du balisage de présentation. Le sémantisme vise à renforcer le sens des informations contenues dans les pages web. Grâce à de nouvelles balises sémantiques, les moteurs de recherches et autres logiciels pourront mieux évaluer l’importance du contenu d’un site web.
+Une grande partie des fonctionnalités de présentation des versions précédentes de HTML ne sont plus supportées, le balisage de présentation présente plusieurs problèmes :
+* Moins d’accessibilité, par exemple pour présenter le balisage de présentation, des auteurs utilisaient ARIA (Applications Internet Riches et Accessibles) qui est un ensemble d’attribut permettant de rendre le contenu et les applications web accessibles. Cependant la plupart des widgets ont été intégrés au sein d’HTML5 et il est préférable aujourd’hui d’utiliser un balisage sémantique.
+* Coût de maintenance élevé, il est plus simple de maintenir un site intégrant des balises sémantiques appropriées.
+* Taille des documents, l’usage de balise de présentation peut être redondant et ainsi augmenter la taille des documents.
+
+C’est pourquoi le balisage de présentation est supprimé dans la version 5.3. HTML 4.0 avait abandonné le balisage de présentation il y a quelques années. Cependant il reste encore 2 fonctionnalités de balisage de présentation style attribute et <style> element
+Nous pouvons remarquer que dans cette nouvelle version 5.3, certains éléments de balisage de présentation ont été redéfinies :
+* <b>
+* <i> exemple : <i> deviendra en balise sémantique <em> qui indiquera une mise en valeur
+* <hr>
+* <s>
+* <small>
+* <u>
+
+
 ### HTML5, interactif et innovant
 
 HTML5 est également utilisé dans des domaines tels que l’univers du jeu vidéo, l’animation vidéo. HTML est considéré comme un « accélérateur » du web permettant aux développeurs de créer des expériences innovantes.
 Le but est de ne pas laisser l’utilisateur visiter passivement le site web, grâce aux technologies comme Three.js, WebGL, Javascript, HTML5 intègre des composants modernes, 3D, des ressources permettant de rendre le site plus dynamique, intéractif également.
 Nous pouvons citer le site : fiscalkombat.fr qui sur un site web permet de jouer à un jeu vidéo
 
+![img]("Assets/example1.png")
+
 En ce qui concerne le domaine vidéo nous pouvons citer le site : video.bobdylan.com
 Le site en lui-même est une vidéo, nous pouvons voir que l’HTML5 permet de transformer un simple curseur en une télécommande interactive et d’immerger l’utilisateur sur le site internet.
+
+![img]("Assets/bobdylan.png")
 
 HTML permet de donner un côté immersif, interactif aux sites web. Les site web deviennent de réels acteurs du digital et permettent de véhiculer des messages, des histoires, des ambiances.
 
@@ -726,7 +748,7 @@ Voici un tableau récapitulatif des navigateurs supportant plus ou moins bien HT
 | Safari                              | 13.0 | Bonne |
 | Internet Explorer                              | 10 | Mauvaise |
 
-Rappelons la définition d’un standard : Un standard est un élément de référence, une norme de fabrication.
+**Rappelons la définition d’un standard** : Un standard est un élément de référence, une norme de fabrication.
 Le consortium W3C est l’organisme chargé de mettre en œuvre les standards du web. Son but est de promouvoir la compatibilité des technologies du web dont HTML5.
 
 Le W3C se repose du quatre principes :
@@ -740,7 +762,8 @@ Ces principes nous les retrouvons dans le langage HTML5. Le langage HTML est un 
 
 HTML5 vise à enrichir le langage web pour faciliter la création de clients web riches tout en maintenant une rétrocompatibilité optimale avec l’existant.
 Définition rétrocompatibilité : Aptitute d’un matériel/servie à prendre en charge le même ensemble d’instructions qu’un système plus ancien.
-Code propre avec HTML5
+
+## Code propre avec HTML5
 
 Il est toujours agréable pour un développeur d’avoir un code propre. Mais qu’est-ce qu’un code propre ? En plusieurs points c’est :
 * Un code agréable à lire  
@@ -793,6 +816,8 @@ Les éléments ci-dessous ont été supprimé à cause de leur sous utilisation.
 
 Les différent tags sont encore accessible mais ne seront, pour la plupart, pas supporté par le navigateur.
 
+![img]("Assets/htmlchecker.png")
+
 # Utilité aujourd’hui d’utiliser HTML5
 
 L’engouement provoqué par HTML5 avec la communauté web permet de dire qu’aujourd’hui, HTML est un standard du web. Du fait que la majorité des site internet sont construits avec l’HTML, le CSS et le JavaScript, l’HTML5 regroupe cet ensemble de technologie. Dans le futur il sera indispensable pour tout navigateurs d’intégrer toutes les fonctionnalités de l’HTML5.
@@ -807,6 +832,8 @@ On le voit aujourd’hui les plus grands sites intègrent HTML5 (Apple, Google, 
 Comme dit précédemment, HTML5 de par son succès, devient un réel standard du web.
 
 Nous pouvons voir au début de cette image < !doctype html> qui est simplifié au maximum, HTML5 est donc dans la simplicité.
+
+![img]("Assets/html.png")
 
 <hr>
 
