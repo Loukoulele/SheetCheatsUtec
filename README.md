@@ -657,6 +657,112 @@ On peut apercevoir que HTML veux simplifié l'utilisation de balise sans forceme
 
 Nous pouvons voir de nouvelles améliorations liés à cette mise-à-jour. Ce n'est effectivement pas une update majeur mais elle a son lot de spécifité qui permet d'améliorer nettement la qualité de développement pour les développeur.
 
+### HTML 5.3
+La technologie HTML5 en est à sa version 5.2, le W3C travaille actuellement sur une version 5.3 qui apportera de nouvelles fonctionnalités permettant d’aider les auteurs d’applications Web. Il a rendu publique le travail concernant la version 5.3.
+Sa consultation est libre sur le site : ww.w3.org/TR/html53/
+
+### Extensibilité
+
+En termes d’extensibilité, avec HTML 5.3 les auteurs peuvent :
+* Créer des éléments personnalisés afin de créer de nouveaux comportements
+* Utiliser l’attribut « class » pour annoter des éléments. Il s’agit d’une des fonctionnalités primaires du CSS
+* Utiliser <meta name=““ content=““> pour inclure des métadonnées à l’échelle de la page
+* Annoter des liens avec des significations spécifiques avec rel=““
+* Manipuler des scripts en ligne ou côté serveur à l’aide de <script type=““>
+* Étendre les API grâce au mécanisme de prototypage de JavaScript
+
+Il sera également possible de capitaliser automatiquement avec l’autocappitalize attribute. Cette fonctionnalité permettra de :
+* Mettre automatiquement en majuscule toutes les lettres des champs de saisie
+* Mettre le premier caractère de chaque mot en majuscule
+* Mettre en majuscule le premier caractère de chaque phrase
+
+Une autre mesure, les auteurs doivent déterminer si la ou les nouvelles fonctionnalités seront accessibles à des utilisateurs atteints d’handicap et si ces fonctionnalités peuvent dégrader la confidentialité et la sécurité des utilisateurs. Il est également important de prendre en compte l’internationalisation des utilisateurs. Il est impératif de prendre en compte ces considérations pour de meilleures pratiques de l’HTML.
+
+### HTML5, interactif et innovant
+
+HTML5 est également utilisé dans des domaines tels que l’univers du jeu vidéo, l’animation vidéo. HTML est considéré comme un « accélérateur » du web permettant aux développeurs de créer des expériences innovantes.
+Le but est de ne pas laisser l’utilisateur visiter passivement le site web, grâce aux technologies comme Three.js, WebGL, Javascript, HTML5 intègre des composants modernes, 3D, des ressources permettant de rendre le site plus dynamique, intéractif également.
+Nous pouvons citer le site : fiscalkombat.fr qui sur un site web permet de jouer à un jeu vidéo
+
+En ce qui concerne le domaine vidéo nous pouvons citer le site : video.bobdylan.com
+Le site en lui-même est une vidéo, nous pouvons voir que l’HTML5 permet de transformer un simple curseur en une télécommande interactive et d’immerger l’utilisateur sur le site internet.
+
+HTML permet de donner un côté immersif, interactif aux sites web. Les site web deviennent de réels acteurs du digital et permettent de véhiculer des messages, des histoires, des ambiances.
+
+### Cyber-sécurité
+
+La cyber-sécurité est au cœur des nouvelles mesures de la version 5.3.
+Première mesure : Scriptage intersite (XSS)
+Les données doivent être validées avant utilisation, si une étape de validation n’est pas gérée par l’auteur, un attaquant peut effectuer différents types d’attaques. XSS appelée Cross-Site Scripting est une faille de sécurité importante car elle permet l’injection de code HTML ou JavaScript.
+Pour s’en protéger, il existe la fonction « htmlspecialchars() qui permet de filtrer les symboles spéciaux comme <, &, “ en les remplaçant par leur équivalent HTML :
+Exemple : Le symbole & deviendra &amp.
+Deuxième mesure : CSRF (Cross-Site Requuest Forgery)
+Cette attaque consiste à usurper l’identité d’un utilisateur de confiance et permet d’envoyer des commandes, instructions sur un site web.
+Pour se prémunir de ces attaques, les auteurs doivent inclure des jetons appelés « tokens » dans les formulaires HTML.
+
+### Interopérabilité
+
+Définition d’interopérabilité : Notion transversale permettant à divers outils/produits/systèmes/services de communiquer entre eux.
+
+Grâce à l’HTML et son interopérabilité il est possible de visualiser des pages web sur différent device. Car rappelons que l’HTML n’est pas fait pour spécifier l’apparence d’un site web et ses pages, mais plutôt pour mettre l’accent sur l’importante et le sens du contenu.
+Son haut degré d’interopérabilité justifie la baisse des coûts fournisseurs de contenus car une version de chaque document sert des besoins différents.
+
+C’est pourquoi que lorsque l’on développe une application web, l’auteur doit s’assurer de l’interopérabilité de son application, qu’elle peut être implémenté par la plupart des différents implémentateurs.
+
+Prenons un exemple de non-interopérabilité actuelle, du fait qu’Internet Exlorer ne prenne pas en charge certaines normes Web supplémentaires (HTML5), certaines de ses pages WEB continuent d’utiliser des balises HTML non standardisées et qui nuit à l’interopérabilité des navigateurs.
+
+Cette interopérabilité de l’HTML n’est pas seulement visible sur le plan hardware, mais également sur le plan de navigateurs web que nous allons aborder juste après.
+
+## HTML5, un standard
+
+Actuellement, HTML5 est utilisé par les navigateurs les plus courants (Google Chrome, Firefox, Opera, Safari).
+Voici un tableau récapitulatif des navigateurs supportant plus ou moins bien HTML5.
+
+| Navigateur                                                 | Version   | Efficacité |
+| ---                                                 | ---        |
+| Google Chrome | 80.0 | Excellente |
+| Opéra | 66.0   | Excellente |
+| Mozilla Firefox                              | 73.0 | Bonne |
+| Safari                              | 13.0 | Bonne |
+| Internet Explorer                              | 10 | Mauvaise |
+
+Rappelons la définition d’un standard : Un standard est un élément de référence, une norme de fabrication.
+Le consortium W3C est l’organisme chargé de mettre en œuvre les standards du web. Son but est de promouvoir la compatibilité des technologies du web dont HTML5.
+
+Le W3C se repose du quatre principes :
+
+* La simplicité
+* La modularité
+* La compatibilité
+* L’extensibilité
+
+Ces principes nous les retrouvons dans le langage HTML5. Le langage HTML est un élément de référence dans le monde du web puisqu’il est un langage de balise conçu pour représenter les pages web. C’est donc un standard du web.
+
+HTML5 vise à enrichir le langage web pour faciliter la création de clients web riches tout en maintenant une rétrocompatibilité optimale avec l’existant.
+Définition rétrocompatibilité : Aptitute d’un matériel/servie à prendre en charge le même ensemble d’instructions qu’un système plus ancien.
+Code propre avec HTML5
+
+Il est toujours agréable pour un développeur d’avoir un code propre. Mais qu’est-ce qu’un code propre ? En plusieurs points c’est :
+* Un code agréable à lire  
+* Facile à comprendre
+* Structuré, organisé
+* Noms de fichiers clairs
+* Sans erreurs
+
+Avoir un code HTML propre comporte plusieurs avantages :
+* Tout d’abord c’est réutilisable par tous, donc une facilité d’amélioration, de continuité
+* Permet d’avoir un web standardisé avec des règles uniformisées
+* Simplifie et réduits les coûts de maintenance
+
+Comment se construit un code HTML propre ? Par sa structure qui se compose de :
+* L’indentation du code
+* Les noms des fonctions et des variables
+* Les accolades
+* Les appels de fichiers
+
+Ce code propre impactera énormément le référencement SEO appelé également le référencement naturel d’un site internet, les moteurs de recherche trouveront plus facilement un site internet bien structuré, avec un code lisible, clair.
+Pour vérifier si notre code HTML est propre, l’organisme W3C a mis au point un outil en ligne permettant de vérifier si notre site internet est conforme aux normes W3C : validator.w3c.org
+
 ## HTML5 les fonctionnalités retirées
 
 HTML5 continue de s'améliorer que ce soit dans le sens d'ajout de nouvelles fonctionnalités comme des balises, des créations de nouvelles APIs etc..., mais aussi dans le sens de revoir ce qui est existant et de définir si l'utilité persiste ou non.
@@ -687,6 +793,21 @@ Les éléments ci-dessous ont été supprimé à cause de leur sous utilisation.
 
 Les différent tags sont encore accessible mais ne seront, pour la plupart, pas supporté par le navigateur.
 
+# Utilité aujourd’hui d’utiliser HTML5
+
+L’engouement provoqué par HTML5 avec la communauté web permet de dire qu’aujourd’hui, HTML est un standard du web. Du fait que la majorité des site internet sont construits avec l’HTML, le CSS et le JavaScript, l’HTML5 regroupe cet ensemble de technologie. Dans le futur il sera indispensable pour tout navigateurs d’intégrer toutes les fonctionnalités de l’HTML5.
+
+Les spécifications de l’HTML5 version 5.3 ne sont à l’heure actuelle pas encore terminées, elles viennent de commencer car il est long de pouvoir recenser, et penser aux nouvelles fonctionnalités de demain tout en répondant au maximum aux besoins des utilisateurs.
+
+Aujourd’hui la simplicité d’utilisation de l’HTML5 permet à n’importe qui se former rapidement et de pouvoir se lancer rapidement dans la construction de son propre site internet sans de grosses connaissances informatiques.
+L’HTML5 n’est pas une révolution, mais une évolution logique des technologies ayant construit le web.
+
+On le voit aujourd’hui les plus grands sites intègrent HTML5 (Apple, Google, Gmail, YouTube).
+
+Comme dit précédemment, HTML5 de par son succès, devient un réel standard du web.
+
+Nous pouvons voir au début de cette image < !doctype html> qui est simplifié au maximum, HTML5 est donc dans la simplicité.
+
 <hr>
 
 ## Source (pour nous) :  
@@ -712,3 +833,13 @@ HTML 5.1 :
 * https://www.grafikart.fr/blog/w3C-html-5-1
 HTML 5.2 :
 * https://www.w3.org/TR/html52/
+
+https://www.millenium.org/news/156787.html
+https://blog.equancy.com/le-futur-de-la-publicite-en-ligne-cest-html5-et-cest-maintenant/
+https://www.w3.org/TR/html53/
+https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA
+https://www.justegeek.fr/les-navigateurs-internet-et-le-html5/
+http://prof.bpesquet.fr/cours/html5-en-bref/
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.switech.fr%2F
+https://www.agenceici.com/le-blog/article/les-sites-web-se-doivent-de-respecter-la-norme-w3c-73
+https://verekia.com/html5/introduction-html5/#part4-3
